@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/blogpost.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/container1.css">
+    <link rel="stylesheet" href="./css/maincontainer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/discover.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <!-- NAV BAR STARTS -->
+
+    <nav class="navbar">
+        <div class="logo" id="nlogo"></div>
+        <div class="navcontent">
+            <a href="#" class="navitem" id="ni1">Our Story</a>
+            <a href="#" class="navitem" id="ni2">Membership</a>
+            <a href="/write" class="navitem" id="ni3">Write</a>
+            <a href="#" class="navitem" id="ni4">Sign In</a>
+            <button type="submit" class="navitem" id="navbutton">Get Started</button>
+        </div>
+    </nav>
+    
+    <!-- NAV BAR ENDS -->
+
+
+
+    <!-- corousel starts -->
+    <div class="carousel">
+        <div class="ctext" id="ctext1">
+            Stay curious.
+        </div>
+        <div class="ctext" id="ctext2">
+            Discover stories, thinking, and expertise <br> from writers on any topic.
+        </div>
+        <button type="submit" class="text" id="ctext3">
+            Start Reading
+        </button>
+    </div>
+
+    <!-- carousel ends -->
+
+
+    <!-- trending on medium starts -->
+
+    <div class="container1">
+        <div class="tomcontainer">
+            <div id="tomimage"></div>
+            <div id="trendingonmedium">Trending on Medium</div>
+        </div>
+        <div class="container1-grid">
+            
+            <div id="container1-g1" class="gb1">
+                <div class="sno">01</div>
+                <div class="gbhead">
+                    <div class="gbphotostart" style="background-image: url(./images/Screenshot\ 2024-01-20\ 212605.png); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain;"></div>
+                    <div class="gbtitle">Barr Moses </div>
+                    <div class="gbphotoend"></div>
+                </div>
+                <div class="gbbottom">
+                    <div class="gblink"><b>Top 10 Data & AI Trends for 2024</b></div>
+                    <div class="gbsub">Jan 19 &centerdot; 6 min read  &#10024</div>
+                </div> 
+            </div>
+            <div id="container1-g2" class="gb1">
+                <div class="sno">02</div>
+                <div class="gbhead">
+                    <div class="gbphotostart" style="background-image: url(./images/Screenshot\ 2024-01-21\ 004407.png); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain;"></div>
+                    <div class="gbtitle">Dr. Jason Fung</div>
+                    <div class="gbphotoend" style="background-image: url(./images/Screenshot\ 2024-01-21\ 004628.png); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain;"></div>
+                </div>
+                <div class="gbbottom">
+                    <div class="gblink"><b>The Body’s “Fat Thermostat” Part 1</b></div>
+                    <div class="gbsub">Jan 18 &centerdot; 6 min read  &#10024</div>
+                </div> 
+            </div>
+            <div id="container1-g3" class="gb1">
+                <div class="sno">03</div>
+                <div class="gbhead">
+                    <div class="gbphotostart" style="background-image: url(./images/1_CJe3891yB1A1mzMdqemkdg.jpg); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain;"></div>
+                    <div class="gbtitle">Tomaz Bratanic in Towards Data Science </div>
+                    <div class="gbphotoend"></div>
+                </div>
+                <div class="gbbottom">
+                    <div class="gblink"><b>Enhancing Interaction between Language Models and Graph Databases via a...</b></div>
+                    <div class="gbsub">Jan 11 &centerdot; 6 min read  &#10024</div>
+                </div>
+            </div>
+            <div id="container1-g4" class="gb1">
+                <div class="sno">04</div>
+                <div class="gbhead">
+                    <div class="gbphotostart" style="background-image: url(./images/1_5MjyHAR36Q-inrbJxGu4Eg.png); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain;"></div>
+                    <div class="gbtitle">Sean Kernan in ILLUMINATION-Curated</div>
+                    <div class="gbphotoend"></div>
+                </div>
+                <div class="gbbottom">
+                    <div class="gblink">On the Regrets of Being a Parent</div>
+                    <div class="gbsub">Jan 18 &centerdot; 6 min read  &#10024</div> 
+                </div>
+            </div>
+            <div id="container1-g5" class="gb1">
+                <div class="sno">05</div>
+                <div class="gbhead">
+                    <div class="gbphotostart" style="background-image: url(./images/Screenshot\ 2024-01-20\ 212950.png); background-repeat: no-repeat; width: 20px; height: 20px; background-size: contain;"></div>
+                    <div class="gbtitle">Enrique Dans</div>
+                    <div class="gbphotoend"></div>
+                </div>
+                <div class="gbbottom">
+                    <div class="gblink">It’s hard to admit, but sometimes, technology isn’t the answer, as the self-...</div>
+                    <div class="gbsub">Jan 19 &centerdot; 3 min read  &#10024</div> 
+                </div>
+            </div>
+            <div id="container1-g6" class="gb1">
+                <div class="sno">06</div>
+                <div class="gbhead">
+                    <div class="gbphotostart" style="background-image: url(./images/Screenshot\ 2024-01-21\ 005301.png); background-repeat: no-repeat; width: 20px; height: 20px; background-size: cover;"></div>
+                    <div class="gbtitle">Charlie Brown in Rooted</div>
+                    <div class="gbphotoend"></div>
+                </div>
+                <div class="gbbottom">
+                    <a class="gblink" href = "https://medium.com/rooted-publication/these-are-the-wine-etiquette-rules-we-sommeliers-all-think-are-complete-nonsense-038266612cab">These Are the Wine Etiquette Rules We Sommeliers All Think Are Complete Nonsense</a>
+                    <div class="gbsub">Jan 19 &centerdot; 7 min read  &#10024</div> 
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- trending on medium ends -->
+
+    <hr style="opacity: 0.3;">
+
+
+
+
+    <!-- maincontainer starts -->
+    <div id="maincontainer">
+
+
+        <!-- blogposts starts -->
+        <div id="blogposts">
+            <div class="postbox">
+                <div class="posttext">
+                    <div class="postauthor">
+                        <div class="authorimage" id="authimage1"></div>
+                        <div class="postauthorname">he Daily Edition in The Medium Blog</div>
+                    </div>
+                    <div style="line-height: 25px;">
+                        <div class="posttitle">Welcome to Medium’s Daily Edition</div>
+                        <div class="postsubtitle">Today: The lesser-known origins of Dry January</div>
+                    </div>
+                    <div class="posttime">Jan31 &centerdot; 4 min read &centerdot; <div class="category" style="display: inline-block; ">Medium</div> </div>
+                    <div class="bookmarksymbol"></div>
+                </div>
+                <div class="postimage" id="postimage1"></div>
+            </div>
+
+
+        
+            <div class="postbox">
+                <div class="posttext">
+                    <div class="postauthor">
+                        <div class="authorimage" id="authimage2"></div>
+                        <div class="postauthorname">joahspearman in Rock n’ Heavy</div>
+                    </div>
+                    <div style="line-height: 25px;">
+                        <div class="posttitle">Is André 3000 the Most Free Black Man in America?</div>
+                        <div class="postsubtitle"></div>
+                    </div>
+                    <div class="posttime">Jan31 &centerdot; 4 min read &centerdot; <div class="category" style="display: inline-block; ">Music</div> </div>
+                    <div class="bookmarksymbol"></div>
+                </div>
+                <div class="postimage" id="postimage2"></div>
+            </div>
+
+
+            <div class="postbox">
+                <div class="posttext">
+                    <div class="postauthor">
+                        <div class="authorimage" id="authimage3"></div>
+                        <div class="postauthorname">Ryan Chin  in In Living Color</div>
+                    </div>
+                    <div style="line-height: 25px;">
+                        <div class="posttitle">Looking at a Familiar Place From a New Angle</div>
+                        <div class="postsubtitle">A fly fisher discovers the wonders of a river’s surface</div>
+                    </div>
+                    <div class="posttime">Jan24 &centerdot; 7 min read &centerdot; <div class="category" style="display: inline-block; ">Rivers</div> </div>
+                    <div class="bookmarksymbol"></div>
+                </div>
+                <div class="postimage" id="postimage3"></div>
+            </div>
+
+
+            <div class="postbox">
+                <div class="posttext">
+                    <div class="postauthor">
+                        <div class="authorimage" id="authimage4"></div>
+                        <div class="postauthorname">Sivan Hermon Code Like A Girl</div>
+                    </div>
+                    <div style="line-height: 25px;">
+                        <div class="posttitle">Starting with No: Why Most People Shouldn’t Be Managers</div>
+                        <div class="postsubtitle">Why the desired title won’t give you what you’re looking for</div>
+                    </div>
+                    <div class="posttime">Jan24 &centerdot; 7 min read &centerdot; <div class="category" style="display: inline-block; ">Leadership</div> </div>
+                    <div class="bookmarksymbol"></div>
+                </div>
+                <div class="postimage" id="postimage4"></div>
+            </div>
+        </div>
+        <!-- blogposts ends -->
+
+
+
+
+        <div id="discover">
+            <div id="discoverheading">Discover more of what matters to you</div>
+            <div id="discovertags">
+                <a href="#" class="dtag">Programming</a>
+                <a href="#" class="dtag">Data Science</a>
+                <a href="#" class="dtag">Technology</a>
+                <a href="#" class="dtag">Self Improvement</a>
+                <a href="#" class="dtag">Writing</a>
+                <a href="#" class="dtag">Relations</a>
+                <a href="#" class="dtag">Machine Learning</a>
+                <a href="#" class="dtag">Productivity</a>
+                <a href="#" class="dtag">Politics</a>
+            </div>
+            <a id="seemoretopics" href="">See more topics</a>
+            <hr style="opacity: 0.1;">
+            <div id="discoverend">
+                <a href="#" class="dendtag">Help</a>
+                <a href="#" class="dendtag">Status</a>
+                <a href="#" class="dendtag">About</a>
+                <a href="#" class="dendtag">Careers</a>
+                <a href="#" class="dendtag">Blog</a>
+                <a href="#" class="dendtag">Privacy</a>
+                <a href="#" class="dendtag">Terms</a>
+                <a href="#" class="dendtag">Text to Speech</a>
+                <a href="#" class="dendtag">Teams</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- main container ends -->
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

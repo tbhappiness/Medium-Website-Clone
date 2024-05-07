@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 70vw;
+    margin: auto;
+    margin-top: 15px;
+}
+.story{
+    display: flex;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.title{
+    display: flex;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 40px;
+}
+.navleft{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    height: 100%;
+}
+.navright{
+    width: 20%;
+    display: flex;
+    column-gap: 10px;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.inputContent{
+    margin-top: 50px;
+    display: block;
+}
+.mediumLogo{
+    background-image: url('https://i.ibb.co/4WVGTXd/image.png');
+    width: 50px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.draftInfo{
+    color: rgba(0, 0, 0, 0.803);
+
+}
+.saveStatus{
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.586);
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.publish{
+    padding: 1px 7px;
+    width: 60px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    height: 70%;
+    border: none;
+}
+.titleInput{
+    display: block;
+    font-size: 40px;
+    font-family: serif;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.storyInput{
+    height: calc(100vh - 176px);
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: serif;
+    outline: none;
+    resize: none;
+    border: none;
+}
+.menu{
+    width: 20px;
+    height: 20px;   
+    text-align: center;
+    font-weight: 900;
+}
+.bellIcon{
+    width: 30px;
+}
+.profileIcon{
+    height: 80%;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url('https://th.bing.com/th/id/OIP.YpQ0oZGLK4k09k6sq354OwHaHx?rs=1&pid=ImgDetMain');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.storyInput::-webkit-scrollbar{
+    width: 0px;
+}
+.profileIcon:hover{
+    cursor: pointer;
+}
+.publish:hover{
+    cursor: pointer;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.mediumLogo:hover{
+    cursor: pointer;
+}
+.bellIcon:hover{
+    cursor: pointer;
+}

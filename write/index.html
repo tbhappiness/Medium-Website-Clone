@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+   <div class="container">
+        <form action="/publish" class="articleForm" method="GET">
+
+            <nav class="navbar">
+                <div class="navleft">
+                    <a href="/">
+                        <div class="mediumLogo"></div>
+                    </a>
+                    <div class="draftInfo">Draft in MadhavMiddha</div>
+                    <div class="saveStatus">Saved</div>
+                </div>
+                <div class="navright">
+                    <button class="publish" type="submit">Publish</button>
+                    <div class="menu">...</div>
+                    <div class="bellIcon">&#128276</div>
+                    <div class="profileIcon"></div>
+
+                </div>
+            </nav>
+
+
+            <div class="inputContent">
+                <div class="title">
+                    <input type="text" name="title" placeholder="Title" class="titleInput">
+                </div>
+                <div class="story">
+                    <textarea name="story" placeholder="Tell your story..." class="storyInput"></textarea>
+                 </div>
+            </div>
+
+        </form> 
+
+    </div>
+
+    <script src="./script.js"></script>
+
+
+</body>
+</html>

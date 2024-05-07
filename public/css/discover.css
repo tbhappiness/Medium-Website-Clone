@@ -1,0 +1,36 @@
+#discovertags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 5px;
+}
+#discoverheading{
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.dtag{
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+#seemoretopics{
+    color: #1A8917;
+    font-size: 14px;
+    margin: 15px 0px;
+    text-decoration: none;
+    display: inline-block;
+}
+#discoverend{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+    margin-top: 30px;
+}
+.dendtag{
+    color: #6B6B6B;
+    text-decoration: none;
+    font-size: 14px;
+}
